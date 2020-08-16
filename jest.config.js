@@ -1,13 +1,13 @@
-// For a detailed explanation regarding each configuration property, visit:
-// https://jestjs.io/docs/en/configuration.html
-
 module.exports = {
   clearMocks: true,
-
+  collectCoverage: true,
   coverageDirectory: 'coverage',
-
-  coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
-
+  runner: 'jest-runner',
+  setupFilesAfterEnv: ['jest-enzyme'],
+  testEnvironment: 'enzyme',
+  testEnvironmentOptions: {
+    enzymeAdapter: 'react16',
+  },
   transform: {
     '.(ts|tsx)': 'ts-jest',
   },
