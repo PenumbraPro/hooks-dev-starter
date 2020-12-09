@@ -12,8 +12,9 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        # Jest26 在 NodeJS v10 会有问题
+        node-version: [12.x, 14.x]
+        os: [ubuntu-latest, macos-latest]
 
     steps:
       - uses: actions/checkout@v2
