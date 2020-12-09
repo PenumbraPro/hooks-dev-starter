@@ -6,13 +6,20 @@ describe('useCounter Hooks', () => {
     const { result } = renderHook(() => useCounter());
     expect(result.current.count).toBe(0);
     expect(typeof result.current.increment).toBe('function');
+    expect(typeof result.current.decrement).toBe('function');
   });
 
-  it('should render work correctly', () => {
-    const { result } = renderHook(() => useCounter());
+  it('should render and work correctly', () => {
+    const { result } = renderHook(() => useCounter(1));
 
     act(() => {
       result.current.increment();
+    });
+
+    expect(result.current.count).toBe(2);
+
+    act(() => {
+      result.current.decrement();
     });
 
     expect(result.current.count).toBe(1);

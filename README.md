@@ -1,6 +1,10 @@
-# hooks-dev-starter
+# 🏌️hooks-dev-starter
 
-> 快速开发自定义 React Hooks。
+> 快速开发你的自定义 React Hooks。
+
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/PenumbraPro/hooks-dev-starter/Hooks%20Starter%20CI/master)
+![GitHub repo size](https://img.shields.io/github/repo-size/PenumbraPro/hooks-dev-starter)
+![Codecov](https://img.shields.io/codecov/c/github/PenumbraPro/hooks-dev-starter)
 
 ## 内置
 

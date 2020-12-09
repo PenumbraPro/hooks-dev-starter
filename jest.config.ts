@@ -9,7 +9,7 @@ export default {
   coverageProvider: 'v8',
   coverageReporters: ['json', 'text', 'lcov', 'clover'],
   moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
-  notify: true,
+  notify: false,
   preset: 'ts-jest',
   runner: 'jest-runner',
   setupFiles: ['./jest.setup.ts'],
